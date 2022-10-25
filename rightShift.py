@@ -1,28 +1,21 @@
-from _operator import length_hint
 
-def rightShift(text,num ):   
-    
+
+def rightShift(text, num ):   
+    #rightShift - 
+    #text - the word
+    #num -number of letters you are removing from the word
    
+    cnt = 0                                             #the counter for the while loop
+    end= len(text)                                      
+    end = end-num                                       
+    word = text[0:end]                                  
     
-    end= len(text)
-    end = end-3
-    word = text[0:end]
+    while cnt < num:                                    #Determining how many hashtags it needs to add to the front so it runs the loop that many times
+        
+        word = "#" + word                               #Adds the hashtags that removed the letters to the beginning of the word
+        cnt +=1
     
-    print(word) 
+    return word                                         #Returns the finished word
     
-    cnt = 0
-    while cnt <length_hint
-    data= "#" + data 
-    
-    
-def main():
-    
-    
-    
-    rightShift("COMPUTER", 3)
-    
-    
-                
-if __name__ == '__main__':
-    main() 
+
     
