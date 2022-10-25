@@ -75,7 +75,6 @@ def leftShift(X):
     
 def main():
     
-    leftShift(input("enter X and word:\n"))
     
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
