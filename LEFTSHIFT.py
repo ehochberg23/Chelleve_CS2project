@@ -4,15 +4,14 @@ Created on Oct 13, 2022
 
 @author: CCaliboso24
 '''
-from turtledemo.nim import computerzug
 
-def leftShift(num,word):
+def leftShift(num,text):
 
     wrd = []                                    #wrd array will hold all letters of a word separate
     
     cnt1 = 0                                     #cnt1 is the counter for the while loop (while (cnt1 < len(word))
-    while cnt1 < len(word):
-        char = word[cnt1]
+    while cnt1 < len(text):
+        char = text[cnt1]
         wrd.append(char)
         cnt1 = cnt1 + 1
     '''
@@ -38,13 +37,33 @@ def leftShift(num,word):
     '''
 
     finalWord = "".join(wrd)                    #finalWord is the wrd array converted to a string
-    print(finalWord)                    
-    
-    
-    
-    
+    print(finalWord)
+
+
 def main():
 
-    
-if __name__ == '__main__':
+    data = "LS-1/OHIO"
+
+    data = data.split("/")
+    data_num = len(data)
+
+    text = data[-1]
+
+    count = 0
+    while count < data_num:
+        command = data[count]
+        command = command.split("-")
+        function = command[0]
+
+        if function == "LS":
+            num = int(command[-1])
+            text = leftShift(num, text)
+
+
+        count = count + 1
+
+    return text
+
+
+if __name__ == "__main__":
     main()
