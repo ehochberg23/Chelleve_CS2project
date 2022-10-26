@@ -1,20 +1,24 @@
+def rightShift(num, text):
+    # rightShift -
+    # text - the word
+    # num -number of letters you are removing from the word
 
-def rightShift(text,num):
-
-    end= len(text)
-    end = end-num
+    cnt = 0  # the counter for the while loop
+    end = len(text)
+    end = end - num
     word = text[0:end]
-    
-    print(word) 
-    
-    cnt = 0
-    while cnt < length_hint
-    data = "#" + data
-    
-    
+
+    while cnt < num:  # Determining how many hashtags it needs to add to the front so it runs the loop that many times
+
+        word = "#" + word  # Adds the hashtags that removed the letters to the beginning of the word
+        cnt += 1
+
+    print(word)  # Returns the finished word
+
+
 def main():
 
-    data = "RS-1/OHIO"
+    data = "RS-3/COMPUTER"
 
     data = data.split("/")
     data_num = len(data)
