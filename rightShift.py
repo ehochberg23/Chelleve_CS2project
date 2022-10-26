@@ -3,6 +3,7 @@ def rightShift(num, text):
     # text - the word
     # num -number of letters you are removing from the word
 
+
     cnt = 0  # the counter for the while loop
     end = len(text)
     end = end - num
@@ -43,3 +44,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
