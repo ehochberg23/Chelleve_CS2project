@@ -1,4 +1,3 @@
-
 def main():
     
     out = reverseString(3,3, "COMPUTER")
@@ -7,8 +6,8 @@ def main():
 
 
 def reverseString(position, length, text):
-     """
-    Sum up two integers
+    """
+    This function reverses the middle letters based on position and the length
     Arguments:
         text: a string
         length: an integer
