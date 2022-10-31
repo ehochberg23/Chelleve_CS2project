@@ -2,5 +2,3 @@
 Ellie and her drones
 
 
-
-The truth is that...
