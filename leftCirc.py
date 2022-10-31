@@ -1,9 +1,17 @@
 def leftCirc(num, text):
-    
-    circ = text[num:]
-    text = text[:num]
-    text = circ + text
-    print(text)
+    """
+    Circulates the leftmost 'num' characters to the right hand side of the string
+    Arguments:
+        num: the number of characters being moved to the right hand side
+        text: the string that contains the word being manipulated
+    Returns:
+        text: the resulting string
+    """
+    circ = text[num:]                       #all the characters 'num' and after
+    text = text[:num]                       #all the characters before 'num'
+    text = circ + text                      #resulting string
+    return text
+
 
 
 def main():
@@ -29,7 +37,7 @@ def main():
               
         count = count + 1
         
-    return text
+    print(text)
     
 if __name__ == "__main__":
     main()
