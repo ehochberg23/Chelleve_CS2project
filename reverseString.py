@@ -15,20 +15,14 @@ def reverseString(position, length, text):
     Returns:
         text: A string which is reversed of the part
     """
-    output = ""
-    string = text
     before_reverse = text[:position - 1]  # Keeping letters before the reverse letters
     after_reverse = text[position + length - 1:]  # Keeping letters after the reverse letters the same
-    for i in range(len(string) - 1, -1, -1):  # Reversing the middle letters
-        output = output + string[i]
-    position = position + 1
-    end = position + length
-    output = output[position:end]
-
-    text = before_reverse + output + after_reverse
+    output = text.replace(before_reverse, '')  # delete before_reverse from string
+    output = output.replace(after_reverse, '')  # delete after_reverse from string
+    output = output[::-1]  # reverse resulting string
+    text = before_reverse + output + after_reverse  # put everything back together
 
     return text
-
 
 
     
